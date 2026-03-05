@@ -44,7 +44,9 @@ public class DBConnection {
     public static Connection getConnection() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel_db",
+                    "root",
+                    "Root@123*");
 
             // Ensure tables exist
             createTablesIfNotExist(conn);

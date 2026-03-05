@@ -1,0 +1,38 @@
+package com.hotel.ui;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class AvailabilityUI {
+
+    public static void show(){
+
+        JFrame frame = new JFrame("Room Availability");
+        frame.setSize(350,250);
+        frame.setLocationRelativeTo(null);
+
+        JPanel panel = new JPanel(new GridLayout(3,1,10,10));
+
+        JLabel msg = new JLabel("Rooms Available Today",JLabel.CENTER);
+        msg.setFont(new Font("Arial",Font.BOLD,18));
+
+        JTextArea rooms = new JTextArea(
+        "Single Room : 5 Available\n"+
+        "Double Room : 3 Available\n"+
+        "Suite : 2 Available"
+        );
+
+        JButton back = new JButton("Back");
+
+        panel.add(msg);
+        panel.add(rooms);
+        panel.add(back);
+
+        frame.add(panel);
+        frame.setVisible(true);
+
+        back.addActionListener(e -> frame.dispose());
+
+    }
+
+}

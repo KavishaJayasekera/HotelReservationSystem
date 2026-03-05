@@ -77,4 +77,9 @@ public class UserDAO {
         }
         return false;
     }
+
+    public boolean register(String username, String password) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'register'");
+    }
 }
