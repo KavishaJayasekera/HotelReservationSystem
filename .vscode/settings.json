@@ -1,0 +1,18 @@
+// {
+//     "java.project.sourcePaths": [
+//         "lib",
+//         "src"
+//     ],
+//     "java.project.referencedLibraries": [
+//         "lib\\mysql-connector-j-9.6.0\\mysql-connector-j-9.6.0.jar",
+//         "c:\\Users\\Asus\\Desktop\\HotelReservationSystemNew\\lib\\mysql-connector-j-9.6.0\\mysql-connector-j-9.6.0.jar"
+//     ]
+// }
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}
